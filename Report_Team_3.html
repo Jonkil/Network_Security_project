@@ -15216,13 +15216,13 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Comments-on-the-dataset-features">Comments on the dataset features<a class="anchor-link" href="#Comments-on-the-dataset-features">&#182;</a></h3>
+<h4 id="Comments-on-the-most-interesting-features-in-the-dataset">Comments on the most interesting features in the dataset<a class="anchor-link" href="#Comments-on-the-most-interesting-features-in-the-dataset">&#182;</a></h4>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li><strong><em>Packets_Flow_IAT_Max and Packets_Flow_IAT_Min</em></strong></li>
+<li><strong><em>Packets_Flow_IAT_Mean, Packets_Flow_IAT_Max and Packets_Flow_IAT_Min</em></strong></li>
 </ul>
 <p>This feature has great relevance for our model because Packet Flows is a behavior and a way of propagation Internet Worms use to grow and fill with malware networks. Knowing minimum and maximum data will give extra input for the model to detect malware or intrusion attempts. Often the Packet Flows rate can be a good indicator of attacks.</p>
 <ul>
@@ -15232,12 +15232,11 @@ a.anchor-link {
 <ul>
 <li><strong><em>Forward_Packets_per_Second and Backward_Packets_per_Second</em></strong></li>
 </ul>
-<p>An experiment performed by Waleed Bul'ajoul, Anne James, and Mandeep Pannu demonstrates weaknesses of Network Intrusion Detection Systems, like the inability to process multiple packets and the tendency of packet dropping on heavy traffic loads and high-speed networks avoiding the analysis of the packets.</p>
-<p>This shows how malicious packets can pass through a network without being detected, analyzed, or even being dropped, representing a significant threat to an already built and functional network.</p>
+<p>An experiment performed by Waleed Bul'ajoul, Anne James, and Mandeep Pannu demonstrates weaknesses of Network Intrusion Detection Systems, like the inability to process multiple packets and the tendency of packet dropping on heavy traffic loads and high-speed networks avoiding the analysis of the packets. This shows how malicious packets can pass through a network without being detected, analyzed, or even being dropped, representing a significant threat to an already built and functional network.</p>
 <ul>
 <li><strong><em>Packets_Length_Min, Packets_Length_Max, and Packets_Length_Mean</em></strong></li>
 </ul>
-<p>The IETF states in specification RFC 791 [50], that an IP header consists of a length of 20 bytes, the  13th to the 16th byte being the source address that emits out the packet. A tcpdump is a program that analyses data network packages and its format comes well defined, you can take advantage while analyzing. Its feature fields values on the header can be identified as treated words, the collection of these values creates a vocabulary of many potential feature values. 16 of these feature fields on the packet header can help identify a vocabulary list of possible intrusion detections.</p>
+<p>The IETF states in specification RFC 791, that an IP header consists of a length of 20 bytes, the  13th to the 16th byte being the source address that emits out the packet. A tcpdump is a program that analyses data network packages and its format comes well defined, you can take advantage while analyzing. Its feature fields values on the header can be identified as treated words, the collection of these values creates a vocabulary of many potential feature values. 16 of these feature fields on the packet header can help identify a vocabulary list of possible intrusion detections.</p>
 <ul>
 <li><strong><em>Packets_Length_Standard_Deviation, Forward_IAT_Total, Forward_IAT_Mean and Forward_IAT_Min, Backward_IAT_Total, Backward_IAT_Mean, and Backward_IAT_Min</em></strong></li>
 </ul>
@@ -19058,7 +19057,7 @@ However, if the 'Destination_Port' is 0, we can find 87 'Spoofing' cases. This i
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[235]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[236]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TOP 10 most important features for different classes</span>
@@ -19088,7 +19087,7 @@ However, if the 'Destination_Port' is 0, we can find 87 'Spoofing' cases. This i
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[235]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[236]:</div>
 
 
 
@@ -19263,20 +19262,6 @@ Xuefei Cao ,Yulong Fu, and Bo Chen, 25 August 2020</p>
 </ol>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
